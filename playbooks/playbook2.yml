@@ -1,0 +1,15 @@
+- name: Zadanie samodzielne 2
+  hosts: local
+  connection: local
+  become: true # playbook wykonany jako root
+
+  tasks:
+  - name: Install unzip
+    package:
+      name: unzip
+      state: present
+
+  - name: Install net-tools
+    package:
+      name: net-tools
+      state: present
