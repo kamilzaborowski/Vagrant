@@ -15,7 +15,6 @@ Vagrant.configure("2") do |config|
     ansible.extra_vars = {
       git_repository: "https://github.com/kamilzaborowski/Ansible_roles"
       git_branch: "main"
-    }
   end
   
   config.vm.provision "ansible_local" do |ansible|
