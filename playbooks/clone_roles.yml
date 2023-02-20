@@ -3,7 +3,7 @@
   hosts: all
   become: true
   vars:
-    git_repository: "https://github.com/Panda-Academy-Core-2-0/Ansible_roles.git"
+    git_repository: "https://github.com/kamilzaborowski/Ansible_roles"
     git_branch: "main"
 
   tasks:
