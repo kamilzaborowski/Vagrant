@@ -1,0 +1,16 @@
+---
+- name: Init yaml file
+  hosts: all
+  become: true
+  vars:
+    docker_users:
+    - panda
+    - vagrant
+  
+  roles:
+    - user
+    - packages
+    - geerlingguy.docker
+    - christiangda.awscli
+    - christiangda.awscli_configure
+    - diodonfrost.terraform

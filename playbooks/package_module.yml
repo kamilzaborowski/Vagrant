@@ -1,0 +1,8 @@
+---
+- name: Zapuść role packages i user
+  hosts: local
+  connection: local
+  become: true
+  roles:
+  - packages
+  - user
