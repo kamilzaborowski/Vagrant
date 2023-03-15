@@ -1,0 +1,6 @@
+- name: Name
+hosts: all
+become: true
+roles:
+  - infrastructure
+  - sonarqube
